@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <meta name="viewport" content="widthy=device-width, initial-scale=1.0">
+  </head>
+  <style>
+    @font-face {
+      font-family: youngserif;
+      src: url(YoungSerif-Regular.ttf);
+    }
+    @font-face {
+      font-family: gras;
+      src: url(Outfit-Bold.ttf);
+    }
+    @font-face {
+      font-family: supergras;
+      src: url(Outfit-ExtraBold.ttf);
+    }
+    @font-face {
+      font-family: thin1;
+      src: url(Outfit-Regular.ttf);
+    }
+    @font-face {
+      font-family: med;
+      src: url(Outfit-Medium.ttf);
+    }
+    body {
+      font-family: youngserif, Arial;
+      background-color: hsl(30, 54%, 90%);
+      padding-bottom: 130px;
+    }
+    p {
+      margin: 0px;
+    }
+    .blog-container {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 120px;
+      display: grid;
+      grid-template-rows: 355px 200px 190px 290px 20px 400px 20px 300px;
+      background-color: white;
+      height: 1820px;
+      width: 750px;
+      border-radius: 10px;
+      border: none; 
+    }
+    .container { 
+      margin-right: 35px;
+      margin-left: 35px;
+      margin-top: 40px;
+    }
+    .omlette-image {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .title {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color:hsl(24, 5%, 18%);
+    }
+    .subtitle {
+      color: hsl(30, 10%, 34%);
+      font-size: 16px;
+      font-family: thin1;
+      line-height: 25px;
+    }
+    .container-rose {
+      background-color: hsl(330, 100%, 98%);
+      margin-right: 35px;
+      margin-left: 35px;
+      border-radius: 20px;
+    }
+    .title2 {
+      color: hsl(332, 51%, 32%);
+      font-family: gras;
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+    ul {
+      color: hsl(30, 10%, 34%);
+      line-height: 30px;
+      margin-left: 20px;
+      font-family: thin1;
+      font-size: 16px;
+    }
+    ul li::marker {
+      color: hsl(332, 51%, 32%)
+    }
+    .title3 {
+      color: hsl(14, 45%, 36%);
+      font-size: 30px;
+      margin-bottom: 10px;
+      margin-left: 35px;
+    }
+    .ul2 {
+      list-style-type: square;
+      color: hsl(30, 10%, 34%);
+      font-size: 16px;
+      line-height: 40px;
+      margin: 0px;
+      margin-left: 18px;
+      list-style-position: inside;
+      font-family: thin1;
+    }
+    .ul2 li::marker {
+      color: hsl(14, 45%, 36%);
+      font-size: 12px;
+    }
+    .line {
+      background-color: hsl(30, 18%, 87%);
+      height: 0.1px;
+      margin-top: 20px;
+    }
+    .line span {
+      opacity: 0;
+    }
+    .line-container {
+      margin-right: 35px;
+      margin-left: 35px;
+    }
+    .title4 {
+      color: hsl(14, 45%, 36%);
+      font-size: 30px;
+      margin-bottom: 10px;
+      margin-left: 35px;
+    }
+    ol {
+      font-size: 16px;
+      color: hsl(30, 10%, 34%);
+      line-height: 30px;
+      margin-left: 25px;
+      font-family: thin1;
+      margin: 0px;
+    }
+    ol li::marker {
+      color: hsl(14, 45%, 36%);
+      font-size: 16px;
+      font-family: gras;
+    }
+    ol span {
+      font-size: 15px;
+      color: hsl(24, 5%, 18%);
+      font-family: gras;
+    }
+    .title5 {
+      color: hsl(14, 45%, 36%);
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .subtitle2 {
+      margin-bottom: 30px;
+      color: hsl(30, 10%, 34%);
+      font-family: med;
+    }
+    .flexbox {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      font-family: med;
+    }
+    .nutritions {
+      margin-left: 35px;
+      width: 295px;
+      color: hsl(30, 10%, 34%);
+      font-size: 16px;
+    }
+    .quantity {
+      color: hsl(14, 45%, 36%);
+      font-size: 16px;
+      font-family: gras;
+    }
+    .line2 {
+      background-color: hsl(30, 18%, 87%);
+      height: 0.1px;
+    }
+    .line2 span {
+      opacity: 0;
+    }
+
+  </style>
+  <body>
+    <div class="blog-container">
+      <div class="container">
+        <img class="omlette-image" src="image-omelette.jpeg">
+      </div>
+      <div class="container">
+        <p class="title">
+            Simple Omlette Recipe
+        </p>
+        <p class="subtitle">
+          An easy and quick dish, perfect for any meal. This classic omlette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables
+          or meat
+        </p>
+      </div>
+      <div class="container-rose">
+        <p class="title2">
+          Preparation time
+        </p>
+        <ul>
+          <li><span><span style="font-size:16px; font-family: gras; color: hsl(24, 5%, 18%);">&#160;&#160;&#160;&#160;&#160;Total:</span> Approximately 10 minutes</span></li>
+          <li><span><span style="font-size:16px; font-family: gras; color: hsl(24, 5%, 18%);">&#160;&#160;&#160;&#160;&#160;Preperations:</span> 5 minutes</span></li>
+          <li><span><span style="font-size:16px; font-family: gras; color: hsl(24, 5%, 18%);">&#160;&#160;&#160;&#160;&#160;Cooking:</span> 5minutes</span></li>
+        </ul>
+      </div>
+      <div class="container" style="margin-top: 30px; margin-left: 0px;">
+        <p class="title3">Ingredients</p>
+        <ul class="ul2">
+          <li>&#160;&#160;&#160;&#160;&#160;2-3 large egss</li>
+          <li>&#160;&#160;&#160;&#160;&#160;Salt,to taste</li>
+          <li>&#160;&#160;&#160;&#160;&#160;Pepper,to taste</li>
+          <li>&#160;&#160;&#160;&#160;&#160;1tablespoon of butter oil</li>
+          <li>&#160;&#160;&#160;&#160;&#160;Optional fillings:cheese,diced vegetables,cooked meats,herbs</li>
+        </ul>
+      </div>
+      <div class="line-container">
+        <div class="line"><span>a</span></div>
+      </div>
+      <div class="container" style="margin-top: 30px; margin-left: 0px;">
+        <p class="title4">
+          Instructions
+        </p>
+        <ol>
+          <li>
+            <div><span>&#160;&#160;&#160;&#160;&#160;Beat the eggs:</span> In a bowl, beat the egss with a pinch of salt and pepper until they are well &#160;&#160;&#160;&#160;&#160;mixed. You can add a tablespoon of water or for a fluffer texture.</div>
+          </li>
+          <li>
+            <div><span>&#160;&#160;&#160;&#160;&#160;Heat the pan:</span> place a non-stick frying pan over medium heat and add butter or oil.</div>
+          </li>
+          <li>
+            <div><span>&#160;&#160;&#160;&#160;&#160;Cook the omelette:</span> Once the butter is melted and bubbling, pour in the egss. Tilt the pan to &#160;&#160;&#160;&#160;&#160;ensure the eggs evenly coat the surface.</div>
+          </li>
+          <li>
+            <div><span>&#160;&#160;&#160;&#160;&#160;Add fillings (optional):</span> when the eggs begin to set at the edges but are still slightly runny in &#160;&#160;&#160;&#160;&#160;the middle, springle your chosen fillings over one half of the omelette.</div>
+          </li>
+          <li>
+            <div><span>&#160;&#160;&#160;&#160;&#160;Fold and serve:</span> As the omelette continues to cook,carefully lift one edge and fold it over the &#160;&#160;&#160;&#160;&#160;illings. Let it cook for another minute, then slide it onto a plate.</div>
+          </li>
+          <li>
+            <div><span>&#160;&#160;&#160;&#160;&#160;Enjoy:</span> Serve hot,with additional salt and pepper if needed</div>
+          </li>
+        </ol>
+      </div>
+      <div class="line-container">
+        <div class="line"><span>a</span></div>
+      </div>
+      <div class="container">
+        <p class="title5">
+          Nutrition
+        </p>
+        <p class="subtitle2">
+          The table shows nutritional values per serving without the additional fillings.
+        </p>
+        <div class="flexbox">
+          <div class="nutritions">Calories&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="quantity">277kcal</span></div>
+          <div class="line2"><span>a</span></div>  
+          <div class="nutritions">Carbs&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="quantity">0g</span></div>
+          <div class="line2"><span>a</span></div>
+          <div class="nutritions">Protein&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="quantity">20g</span></div>
+          <div class="line2"><span>a</span></div>
+          <div class="nutritions">Fat&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span class="quantity">22g</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
